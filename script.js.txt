@@ -8,12 +8,12 @@ function scrollTopFunc() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-// Load achievements (if needed)
-// fetch('data.json')
-//   .then(res => res.json())
-//   .then(data => {
-//     const container = document.getElementById('achievement-list');
-//     data.forEach(item => {
-//       container.innerHTML += `<p>📌 ${item.title} (${item.year})</p>`;
-//     });
-//   });
+// Load achievements
+fetch('data.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('achievement-list');
+    data.forEach(item => {
+      container.innerHTML += `<p>📌 ${item.title} (${item.year})</p>`;
+    });
+  });
