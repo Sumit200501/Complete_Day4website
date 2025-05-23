@@ -17,11 +17,11 @@
 
   <!-- Navbar -->
   <div class="navbar bg-green-200">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-xl">🥦 Jay Maa Vegetable Shop</a>
-      <a href="index.html" class="ml-4 font-bold underline text-blue-700 text-xl px-4 py-2 rounded bg-blue-100 hover:bg-blue-200 transition inline-block">← Back to Portfolio</a>
+    <div class="flex-1 flex items-center">
+      <a href="index.html" class="font-bold underline text-blue-700 text-xl px-4 py-2 rounded bg-blue-100 hover:bg-blue-200 transition inline-block mr-2">← Back to Portfolio</a>
+      <a class="btn btn-ghost text-xl font-bold">🥦 Jay Maa Vegetable Shop</a>
     </div>
-    <div class="flex-none flex items-center">
+    <div class="flex-none flex items-center flex-row-reverse">
       <!-- Hamburger button for mobile -->
       <button id="hamburger-btn" class="btn btn-square btn-ghost text-2xl md:hidden" onclick="toggleMobileMenu()">☰</button>
       <button class="btn btn-outline hidden md:inline-flex ml-2" onclick="showCart()">🛒 Cart <span id="cart-count" class="ml-1">0</span></button>
@@ -319,6 +319,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
   </script>
+
+  <div class="w-full flex justify-center my-8">
+    <a href="index.html" class="font-bold text-xl md:text-2xl px-6 py-3 rounded bg-blue-100 hover:bg-blue-200 text-blue-800 border border-blue-300 shadow transition">← Back to My Portfolio Website</a>
+  </div>
 
 </body>
 </html>
